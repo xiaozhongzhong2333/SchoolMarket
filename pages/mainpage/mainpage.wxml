@@ -1,0 +1,98 @@
+<view class="page">
+
+  <view class="swiper-container">
+    <swiper class="swiper_box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current='swiperCurrent' bindchange="swiperchange">
+      <swiper-item class='swiper_item' wx:for="{{ad}}">
+        <image bindtap="tapBanner" class="slide-image" style="-webkit-transform: scale({{ swiperCurrent == index ? 0.9 : 0.65 }}) translate({{ (swiperCurrent == index - 1 || swiperCurrent == index + 1) ? (swiperCurrent - index) * 30 : 0 }}%, 0); -webkit-transition: 0.6s;"
+          mode="aspectFill" src='{{item.src}}' />
+      </swiper-item>
+    </swiper>
+  </view>
+
+
+
+  <!-- <view class="search_section">
+    <view class="cx">
+      <icon type="search" size="14" class="tb"></icon>
+      <input type="text" placeholder="请输入查询内容" bindtap="rearch" />
+    </view>
+  </view> -->
+  <view class="func-area">
+    <view bindtap="rearch" >
+      <image src="../../images/1.jpg" mode="aspectFill" class="iconimage"/>
+      <text>点击搜索</text>
+    </view>
+    <view bindtap="buy" >
+      <image src="../../images/2.jpg" mode="aspectFill" class="iconimage"/>
+      <text>求购信息</text>
+    </view>
+  </view>
+
+  <!-- <view class='space'></view> -->
+  <view class="weui-loadmore weui-loadmore_line splb_section">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">商品列表</view>
+  </view>
+  <!-- <scroll-view scroll-x="true"  scroll-y="true"  class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">  -->
+  <view class="page">
+    <view class="page__bd">
+      <view class="weui-tab">
+        <view class="weui-navbar">
+          <block wx:for="{{tabs}}" wx:key="*this">
+            <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+              <view class="weui-navbar__title">{{item}}</view>
+            </view>
+          </block>
+          <!-- </scroll-view>  -->
+          <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+        </view>
+
+
+        <!-- </scroll-view> -->
+        <view class="weui-tab__panel">
+          <view class="weui-tab__content"></view>
+          <view class="weui-tab__content"></view>
+          <view class="weui-tab__content"></view>
+          <view class="weui-tab__content"></view>
+          <view class="weui-tab__content"></view>
+          <view class="weui-tab__content"></view>
+          <view class="weui-tab__content"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+  <view class='goods-container'>
+    <view wx:for="{{ne}}" class='goods-box' catchtap="onTap" data-_id='{{item._id}}'>
+      <view class="img-box">
+        <image src="{{item.fileID}}" class="image" mode="aspectFill" lazy-load="true"></image>
+      </view>
+
+      <view class="goods-title">{{item.describe}}</view>
+      <view style='display:flex;'>
+        <view class="goods-price">¥ {{item.price}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='buttoncss'>
+    <block wx:if="{{count!=1}}">
+      <button size="mini" bindtap="ckxx" class="bto1">回到首页</button>
+    </block>
+    <block wx:if="{{count!=1}}">
+      <button size="mini" bindtap="uppage" class="bto1">上一页</button>
+    </block>
+    <block>
+      <button size="mini" bindtap="downpage" class="bto1">下一页</button>
+    </block>
+  </view>
+</view>
+<!-- <view wx:if="{{count!=1}}">
+    <button size="mini" bindtap="uppage" class="bto1">上一页</button>
+  </view>
+  <view>
+    <button size="mini" bindtap="downpage" class="bto1">下一页</button>
+  </view>
+</view> -->

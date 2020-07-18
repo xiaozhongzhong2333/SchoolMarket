@@ -1,0 +1,27 @@
+<view class="guide">
+  <button size="default" type="default" bindtap="ckxx">刷新</button>
+</view>
+<view wx:if="{{count!=1}}">
+    <button size="default" type="default" bindtap="ckxx">回到首页</button>
+</view>
+
+<view wx:if="{{count!=1}}">
+    <button size="default" type="default" bindtap="uppage">上一页</button>
+  </view>
+<view wx:for="{{ne}}">
+  <view class='viewcss'>
+    <image src="{{item.fileID}}" class='imagesize'></image>
+    <view>
+      <text class='textsize'>{{item.describe}}</text>
+      <text class='textsize2'>￥{{item.price}}</text>
+    </view>
+    <view>
+      <button size="default" type="default" bindtap="onTap" data-_id='{{item._id}}'>下架</button>
+    </view>
+  </view>
+</view>
+
+
+ <view >
+    <button size="default" type="default" bindtap="downpage">下一页</button>
+  </view>

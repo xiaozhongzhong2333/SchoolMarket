@@ -1,0 +1,97 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <!-- <view>
+    <button bindtap='onTop' class="bto1">点击查看已发布宝贝信息</button>
+  </view>
+  <view>
+    <button bindtap='onTap' class="bto1">点击查看已发布求购信息</button>
+  </view> -->
+
+  <view class="asset">
+    <view class='item' bindtap='onTop'>
+      <view>{{balance}}</view>
+      <view>我的发布</view>
+    </view>
+    <view class='item right' bindtap='onTap'>
+      <view>{{score}}</view>
+      <view>我的求购</view>
+    </view>
+  </view>
+  <!-- <view class="page">
+    <view class="page__bd">
+      <view class="weui-grids">
+        <block wx:for="{{grids}}" wx:key="item.name">
+          <navigator class="weui-grid" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+            <view class="weui-grid__label">{{item.name}}</view>
+          </navigator>
+        </block>
+      </view>
+    </view>
+  </view> -->
+
+
+  <view class="user-menu">
+    <view class="item">
+      <navigator url="/pages/gywm/gywm" hover-class="none" class="a">
+        <wxc-icon type='feedback' size='{{iconSize}}' color='{{iconColor}}' style='margin:15rpx 0 10rpx 0;'></wxc-icon>
+        <text class="txt">关于我们</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="/pages/wtfk/wtfk" hover-class="none" class="a">
+        <wxc-icon type='address' size='{{iconSize}}' color='{{iconColor}}' style='margin:15rpx 0 10rpx 0;'></wxc-icon>
+        <text class="txt">问题反馈</text>
+      </navigator>
+    </view>
+    <view class="item no-border-right">
+      <navigator url="/pages/bz/bz" hover-class="none" class="a">
+        <wxc-icon type='location' size='{{iconSize}}' color='{{iconColor}}' style='margin:15rpx 0 10rpx 0;'></wxc-icon>
+        <text class="txt">帮助</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="/pages/sz/sz" hover-class="none" class="a">
+        <wxc-icon type='coupon' size='{{iconSize}}' color='{{iconColor}}' style='margin:15rpx 0 10rpx 0;'></wxc-icon>
+        <text class="txt">设置</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="" hover-class="none" class="a">
+        <wxc-icon type='rate' size='{{iconSize}}' color='lightgray' style='margin:15rpx 0 10rpx 0;'></wxc-icon>
+        <text class="txt" style='color:lightgray;text-decoration: line-through;'>我的收藏</text>
+      </navigator>
+    </view>
+    <view class="item no-border-right">
+      <navigator url="/pages/target/index" hover-class="none" class="a">
+        <wxc-icon type='footprint' size='{{iconSize}}' color='lightgray' style='margin:15rpx 0 10rpx 0;'></wxc-icon>
+        <text class="txt" style='color:lightgray;text-decoration: line-through;'>宝贝留言</text>
+      </navigator>
+    </view>
+    <!-- <view class="item item-bottom" bindtap='makePhoneCall'>
+      <navigator url="" hover-class="none" class="a">
+        <wxc-icon type='group' size='{{iconSize}}' color='{{iconColor}}' style='margin:15rpx 0 10rpx 0;'></wxc-icon>
+        <text class="txt">联系客服</text>
+      </navigator>
+    </view>
+    <view class="item item-bottom" bindtap="aboutUs">
+      <navigator url="url" hover-class="none" class="a">
+        <wxc-icon type='help' size='{{iconSize}}' color='{{iconColor}}' style='margin:15rpx 0 10rpx 0;'></wxc-icon>
+        <text class="txt">关于我们</text>
+      </navigator>
+    </view>
+    <view class="item no-border-bottom">
+      <navigator url="/pages/ucenter/feedback/feedback" hover-class="none" class="a">
+        <wxc-icon type='comment' size='{{iconSize}}' color='{{iconColor}}' style='margin:15rpx 0 10rpx 0;'></wxc-icon>
+        <text class="txt">意见反馈</text>
+      </navigator>
+    </view> -->
+  </view>
+</view>

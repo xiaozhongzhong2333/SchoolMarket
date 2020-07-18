@@ -1,0 +1,272 @@
+.img {
+  width: 100%;
+  height: 550rpx;
+}
+
+
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rpx;
+  background-color: #fff;
+  border-top: 1px solid #ededed;
+  /* border-bottom: 1px solid #ededed; */
+  padding-bottom: 10rpx;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  padding: 20rpx; /*所有4个内边距*/
+  position: relative;
+}
+
+.item-left {
+  flex: 1; /*重要：让所有弹性盒模型对象的子元素都有相同的长度，且忽略它们内部的内容 */
+  align-items: center; /*垂直居中*/
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #303030;
+}
+
+.item-right {
+  position: relative; /*相对定位*/
+  align-items: center; /*垂直居中*/
+  font-size: 40rpx;
+  color: red;
+}
+
+.publisher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  margin-left: 10rpx; */
+  margin: 30rpx 0 20rpx 10rpx;
+}
+.name1{
+  margin-left: 20rpx;
+  font-size: 35rpx;
+}
+.name2{
+  font-size: 35rpx;
+  color: #606266;
+}
+/* 发布者头像 */
+
+.publisher-author {
+  height: 60rpx;
+  width: 60rpx;
+  /* vertical-align: middle; */
+}
+
+/* 发布者昵称 */
+
+.publisher-name {
+  margin-left: 20rpx;
+  font-size: 35rpx;
+  /* vertical-align: middle; */
+}
+
+/*用户头像*/
+
+.userinfo-avatar {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+
+/*用户昵称*/
+
+.userinfo-nickname {
+  margin-left: 20rpx;
+  font-size: 35rpx;
+  /* color: #aaa; */
+}
+
+/* 联系方式 */
+
+.phone-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 26rpx;
+  margin-left: 20rpx;
+}
+.qq{
+  font-size: 35rpx;
+  margin-left: 44rpx;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #606266;
+}
+.phone {
+  font-size: 35rpx;
+  margin-left: 34rpx;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #606266;
+}
+
+.record {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.post-like-image1 {
+  height: 35rpx;
+  width: 46rpx;
+  margin-right: 20rpx;
+}
+
+.post-like-image2 {
+  height: 37rpx;
+  width: 39rpx;
+  margin-right: 20rpx;
+}
+
+.post-like-image3 {
+  height: 38rpx;
+  width: 38rpx;
+  margin-right: 20rpx;
+}
+
+.record-view {
+  margin-right: 40rpx;
+}
+
+.record-date {
+  margin-left: 100rpx;
+}
+
+/***************************************************/
+
+.tool {
+  margin-top: 20rpx;
+}
+
+.circle-img {
+  float: right;
+  margin-right: 40rpx;
+  vertical-align: middle;
+}
+
+.circle-img image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.share-img {
+  margin-left: 30rpx;
+}
+
+.horizon {
+  width: 660rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  position: relative;
+  top: 33rpx;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+/***************************************************/
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 10rpx;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 600;
+  /* margin-top: 10px; */
+  margin-bottom: 12px;
+  margin-left: 10rpx;
+  color: #303030;
+}
+
+.instructions-content {
+  color: #303030;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+  line-height: 44rpx;
+  letter-spacing: 2rpx;
+  font-size: 32rpx;
+}
+
+/*****************************************/
+
+.leave-message {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 10rpx;
+  margin-top: 20px;
+}
+
+.tourists {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30rpx 0 20rpx 10rpx;
+}
+
+.tourists-avator {
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.tourists-name {
+  margin-left: 20rpx;
+  font-size: 35rpx;
+}
+
+.tourists-love-image {
+  height: 34rpx;
+  width: 37rpx;
+  margin-left: 460rpx;
+}
+
+.tourists-love-number {
+  margin-left: 15rpx;
+}
+
+.tourists-love-content {
+  font-size: 28rpx;
+  color: #666;
+  letter-spacing: 4rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+/*********************************/
+
+.reply-date {
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  font-weight: 50;
+}
+
+.reply {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: red;
+}

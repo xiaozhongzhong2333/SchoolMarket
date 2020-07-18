@@ -1,0 +1,31 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <!--商品信息-->
+  <view>
+    <view>
+      <textarea name="information" class='.textarea2' placeholder-class="placeholder" placeholder="在此输入求购的详细信息" value='{{info}}'></textarea>
+    </view>
+  </view>
+  <!-- 商品价格
+  <view class='title'>
+    <view class='title_text'>
+      <text class="text2">求购价格:</text>
+      <input name="price" type='number' value='{{price}}'></input>
+    </view>
+  </view> -->
+  <!--联系方式-->
+  <view class='title'>
+    <view class='title_text'>
+      <text class="text2">QQ号:</text>
+      <input name="qq" type='number' value='{{num}}'></input>
+    </view>
+  </view>
+  <!-- <view class='title'>
+    <view class='title_text'>
+      <text class="text2">求购人昵称:</text>
+      <input name="name" value='{{nam}}'></input>
+    </view>
+  </view> -->
+  <view>
+    <button form-type='submit' class='bto1'>确认发布</button>
+  </view>
+</form>

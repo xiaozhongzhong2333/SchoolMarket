@@ -1,0 +1,7 @@
+/* miniprogram/pages/gywm/gywm.wxss */
+.a{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 30rpx;
+}

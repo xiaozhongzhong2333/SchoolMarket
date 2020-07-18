@@ -1,0 +1,96 @@
+/* pages/qg/qg.wxss */
+page {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+.textarea1{
+  height:200rpx;
+  width:650rpx;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+  margin-left: 50rpx;
+  margin-top: 50rpx;
+  border-radius: 20rpx;
+}
+.textarea2{
+  height:300rpx;
+  width:650rpx;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+  border-radius: 20rpx;
+}
+.text1{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 50rpx;
+  padding-right: 30rpx;
+}
+.text2{
+  font-size: 28rpx;
+  color: #2b2828;
+  margin-bottom: 10rpx;
+}
+.page_section{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+
+}
+.title {
+  margin-top: 5rpx;
+  margin-left: 50rpx;
+  background-color: white;
+  width: 650rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+}
+ 
+.title_text {
+  /* //margin-left: 20rpx; */
+  width: 100%;
+  height: 50rpx;
+  padding-top: 10rpx;
+  display: flex;
+}
+ 
+.title_text text {
+  font-size: 30rpx;
+}
+ 
+.title_text input {
+  font-size: 30rpx;
+  width: 60vw;
+  margin-left: 20rpx;
+}
+ 
+.textarea {
+  height: 100rpx;
+  font-size: 30rpx;
+  margin-left: 40rpx;
+  width: 500rpx;
+}
+ 
+.info-point {
+  background-color: white;
+  width: 100%;
+  height: 100rpx;
+  margin-top: 5rpx;
+}
+.picker1{
+  margin-left: 50rpx;
+  font-size: 20;
+}
+.placeholder{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+.bto1{
+  background-color:#f56060;
+  color:black;
+}

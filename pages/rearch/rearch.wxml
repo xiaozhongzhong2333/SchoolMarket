@@ -1,0 +1,29 @@
+<view class="weui-search-bar__box">
+  <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+  <input type="text" placeholder="请输入查询内容" bindblur="ckxx" confirm-type='search' />
+</view>
+
+<view class='goods-container'>
+  <view wx:for="{{ne}}" class='goods-box' catchtap="onTap" data-_id='{{item._id}}'>
+    <view class="img-box">
+      <image src="{{item.fileID}}" class="image" mode="aspectFill" lazy-load="true"></image>
+    </view>
+
+    <view class="goods-title">{{item.describe}}</view>
+    <view style='display:flex;'>
+      <view class="goods-price">¥ {{item.price}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='buttoncss'>
+  <block wx:if="{{count!=1}}">
+    <button size="mini" bindtap="ckxx" class="bto1">回到首页</button>
+  </block>
+  <block wx:if="{{count!=1}}">
+    <button size="mini" bindtap="uppage" class="bto1">上一页</button>
+  </block>
+  <block>
+    <button size="mini" bindtap="downpage" class="bto1">下一页</button>
+  </block>
+</view>

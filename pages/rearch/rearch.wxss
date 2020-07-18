@@ -1,0 +1,101 @@
+.viewcss {
+  width: 45%;
+  height: 400rpx;
+  background-color:black;
+  margin: 5px;
+  margin-bottom: 100rpx; 
+  /* 绝对定位的父级必须要定位 */
+  position: relative;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagesize {
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 10px;
+}
+
+.textsizeindex1 {
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  margin-top: 100rpx;
+}
+
+.textsizeindex2 {
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  margin-top: 200rpx;
+}
+
+.textsizeindex3 {
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  margin-top: 300rpx;
+}
+
+.imagesize{
+  width: 100%;
+  height: 100%;
+}
+
+.goods-container{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+  background-color: #F2f2f2;
+}
+.goods-box{
+  width: 339rpx;
+  height: 472rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  border-radius:5px;
+}
+.goods-box .img-box{
+  width: 339rpx;
+  height: 339rpx;
+  overflow: hidden;
+}
+.goods-box .img-box image{
+   width: 339rpx;
+   height: 339rpx;
+}
+.goods-box .goods-title{
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0 0rpx 0;
+  color:#000;
+  margin-left: 24rpx;
+}
+.goods-box .goods-price{
+  width: 280rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0;
+  color:#e64340;
+  margin-left: 24rpx;
+}
+
+.bto1{
+  background-color:#d1c4c4;
+  color:black;
+  margin-bottom: 10rpx;
+}
+
+.buttoncss{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}

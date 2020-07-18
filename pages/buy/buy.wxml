@@ -1,0 +1,48 @@
+<view wx:if="{{count!=1}}">
+  <button size="default" class="bto1" bindtap="ckxx">回到首页</button>
+</view>
+
+<view wx:if="{{count!=1}}">
+  <button size="default" class="bto1" bindtap="uppage">上一页</button>
+</view>
+
+<!-- <view wx:for="{{ne}}">
+  <view class="v1">
+    <view>
+    <text class="text1">求购详细信息：</text>
+      <text class="text2">{{item.information}}</text>
+    </view>
+    <view>
+    <text class="text1">求购人昵称：</text>
+      <text class="text3">{{item.name}}</text>
+    </view>
+    <view>
+    <text class="text1">qq号：</text>
+      <text class="text3">{{item.qq}}</text>
+    </view>
+    <view class="divLine"></view>
+  </view>
+</view> -->
+
+<block wx:for='{{ne}}'>
+  <view class='pro'>
+    <!-- <image src="{{pro.user.avatarUrl}}" mode="aspectFill"></image> -->
+    <view class='content'>
+      <view class='content_top'>
+        <view class='nickname'>{{item.name}}</view>
+      </view>
+      <view class='brief'>
+        <text>{{item.information}}</text>
+      </view>
+      <view>
+        <text class="text1">QQ号：</text>
+        <text class="text1">{{item.qq}}</text>
+      </view>
+      <!-- <view class='latest'>最新文章：{{pro.latest}}</view> -->
+    </view>
+  </view>
+</block>
+
+<view>
+  <button size="default" class="bto1" bindtap="downpage">下一页</button>
+</view>

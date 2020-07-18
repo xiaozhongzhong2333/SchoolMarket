@@ -1,0 +1,43 @@
+page {
+background-color: #F8F8F8;
+  line-height: 1.6;
+}
+.button-hover {
+  background-color: red;
+}
+
+.viewcss {
+  display: flex;
+  flex-direction: row;
+}
+
+.imagesize {
+  width: 350rpx;
+  height: 350rpx;
+  margin-bottom: 10rpx;
+}
+
+.textsize {
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 100rpx;
+}
+
+.textsize1 {
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 200rpx;
+}
+
+.textsize2 {
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 300rpx;
+}
+
+.bto {
+  margin-right: 10rpx;
+}

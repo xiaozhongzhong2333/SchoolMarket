@@ -1,0 +1,44 @@
+<view>
+  <image src="{{ne.fileID}}" class="img" bindtap="previewImage"></image>
+</view>
+
+<view class="post-container">
+
+  <view class="flex-row item">
+    <view class="item-left flex-row">
+      <text class='text'>{{ne.describe}}</text>
+    </view>
+    <view class="item-right flex-row">
+      <text class="price" class='text'>{{"￥"+ne.price}}</text>
+    </view>
+  </view>
+
+  <view class="publisher">
+    <text class="name1">发布者昵称：</text>
+    <text class="name2">{{ne.name}}</text>
+  </view>
+ <button size='mini' hover-class="button-hover" type="warn" bindtap="onBuy">
+   点击查看手机号，QQ号
+  </button>
+   <view class="phone-container">
+      <text class="qq">Q Q ：{{phone.qq}}</text>
+    </view>
+    <view class="phone-container">
+      <text class="phone">电话 ：{{phone.phone}}</text>
+    </view>
+</view>
+<!-- 收藏功能 -->
+<view class="tool">
+  <view class="circle-img">
+    <image wx:if="{{collected}}" catch:tap="onCollectionTap" src="../../images/icon/collection.png"></image>
+    <image wx:else catch:tap="onCollectionTap" src="../../images/icon/collection-anti.png"></image>
+    <image class="share-img" src="../../images/icon/share.png"></image>
+  </view>
+  <view class="horizon"></view>
+  <!-- 代表一条水平的直线 -->
+</view>
+
+<view class="instructions">
+  <text class="title">卖家卖货说明：</text>
+  <text class="instructions-content">{{ne.information}}</text>
+</view>

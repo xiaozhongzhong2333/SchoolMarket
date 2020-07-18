@@ -1,0 +1,61 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <!--商品名称-->
+  <view>
+    <view class="page_section">
+      <input name="describe" type='textarea' value='{{title}}' class="textarea1" placeholder-class="placeholder" placeholder="在此输入宝贝名字"></input>
+    </view>
+  </view>
+  <view class="page_section">
+    <text class="text1" value='{{text1}}'>详细描述一下宝贝的品牌型号，规格尺寸，新旧程度等信息</text>
+  </view>
+  <!--商品信息-->
+  <view>
+    <view >
+      <textarea name="information" class='.textarea2' placeholder-class="placeholder" placeholder="在此输入宝贝详细信息" value='{{info}}'></textarea>
+    </view>
+  </view>
+  <!--商品价格-->
+  <view class='title'>
+    <view class='title_text'>
+      <text class="text2">商品价格:</text>
+      <input name="price" type='number' value='{{price}}'></input>
+    </view>
+  </view>
+  <!--联系方式-->
+  <view class='title'>
+    <view class='title_text'>
+      <text class="text2">QQ号:</text>
+      <input name="qq" type='number'  value='{{num}}'></input>
+    </view>
+  </view>
+  <view class='title3'>
+    <view class='title_text'>
+      <text class="text2">手机号:(可空)</text>
+      <input name="phone" type='number'  value='{{num2}}'></input>
+    </view>
+  </view>
+   <!-- <view class='title'>
+    <view class='title_text'>
+      <text class="text2">卖家昵称:</text>
+      <input name="name"  value='{{nam}}' ></input>
+    </view>
+  </view> -->
+  <!--商品类别-->
+  <view class='title'>
+    <view class='title_text' >
+      <text class="text2">商品类别:(点击类别切换)</text>
+      <picker   bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="picker" name="type">
+        <view class="picker1">
+          {{array[index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view>
+    <button bindtap="doUpload" class="bto1">上传图片</button>
+    <image src='{{scimage}}'></image>
+  </view>
+  <view>
+    <button form-type='submit' class='bto1'>确认发布</button>
+  </view>
+</form>
